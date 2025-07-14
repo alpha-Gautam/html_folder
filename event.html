@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Event</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      border: 2px solid black;
+    "
+  >
+    <h1
+      onmouseover="this.style.color='red'"
+      onmouseout="this.style.color='green'"
+      style="background-color: lightgray"
+    >
+      mouse event
+    </h1>
+    <div
+      onmouseover="this.style.backgroundColor='lightgray'"
+      onmouseout="this.style.backgroundColor='white'"
+    >
+      <p class="lorem10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+        alias.
+      </p>
+    </div>
+    <script>
+      function mouseon() {
+        document.querySelector("h1").style.color = "blue";
+      }
+    </script>
+    <h1
+      onmouseover="this.style.fontSize='50px';
+      this.style.color='red'"
+      onmouseout="this.style.fontSize='20px';
+      style='color: green'"
+    >
+      mouse event
+    </h1>
+  </body>
+</html>
