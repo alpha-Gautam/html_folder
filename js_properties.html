@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties</title>
+  </head>
+  <body>
+    <h1>JavaScript Properties</h1>
+    <script type="text/javascript">
+      var aProperty;
+      document.write("Navigator Object Properties<br /> ");
+      var index = 0;
+      for (aProperty in navigator) {
+        index++;
+        document.write(index, ") :  ", aProperty);
+        document.write("<br /> ");
+      }
+      document.write("Exiting from the loop!");
+    </script>
+  </body>
+</html>
